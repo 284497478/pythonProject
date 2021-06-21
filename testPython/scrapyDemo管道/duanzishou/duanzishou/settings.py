@@ -62,9 +62,10 @@ LOG_LEVEL = 'ERROR'
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'duanzishou.pipelines.DuanzishouPipeline': 300,
-# }
+ITEM_PIPELINES = {
+    # 300表示优先级，数字越小优先级越高
+   'duanzishou.pipelines.DuanzishouPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
