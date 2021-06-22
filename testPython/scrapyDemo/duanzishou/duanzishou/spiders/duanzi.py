@@ -52,3 +52,6 @@ class DuanziSpider(scrapy.Spider):
             item['content'] = content
             # 提交给管道
             yield item
+
+        # 递归发送请求
+        # yield scrapy.Request(url,callback=self.parse)
